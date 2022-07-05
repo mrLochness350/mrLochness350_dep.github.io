@@ -13,4 +13,4 @@ I mostly do reverse engineering and Boot2root boxes so I'll place my writeups he
 
 
 ### Table of Contents
-- [HackTheBox](/docs/htb/htb.md)
+- [HackTheBox](docs/htb/htb.md)
