@@ -7,7 +7,7 @@ I mostly do reverse engineering and Boot2root boxes so I'll place my writeups he
 -----------------
 ## Contact info
 
-* LinkedIn: https://www.linkedin.com/in/jonathan-kachlon-595a5a20a
+* [LinkedIn](https://www.linkedin.com/in/jonathan-kachlon-595a5a20a)
 * Discord: mrLochness350#7880
 * For more contact info, get in contact with me
 
