@@ -1,9 +1,9 @@
 ### Easy boxes:
-- [Script Kiddy](htb/easy_boxes/ScriptKiddy)
-- [Bounty Hunter](htb/easy_boxes/BountyHunter)
-- [Love](htb/easy_boxes/Love)
-- [Knife](htb/easy_boxes/Knife) sssssa
-- [Delivery](/docs/htb/easy_boxes/Delivery)
+- [Script Kiddy](easy_boxes/ScriptKiddy)
+- [Bounty Hunter](easy_boxes/BountyHunter)
+- [Love](easy_boxes/Love)
+- [Knife](easy_boxes/Knife) sssssa
+- [Delivery](easy_boxes/Delivery)
 
 
 ### Medium boxes:
