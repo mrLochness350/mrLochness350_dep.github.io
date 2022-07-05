@@ -1,8 +1,8 @@
 ### Easy boxes:
-- [Script Kiddy](/docs/htb/easy_boxes/ScriptKiddy)
-- [Bounty Hunter](/docs/htb/easy_boxes/BountyHunter)
-- [Love](/docs/htb/easy_boxes/Love)
-- [Knife](/docs/htb/easy_boxes/Knife)
+- [Script Kiddy](htb/easy_boxes/ScriptKiddy)
+- [Bounty Hunter](htb/easy_boxes/BountyHunter)
+- [Love](htb/easy_boxes/Love)
+- [Knife](htb/easy_boxes/Knife) sssssa
 - [Delivery](/docs/htb/easy_boxes/Delivery)
 
 
