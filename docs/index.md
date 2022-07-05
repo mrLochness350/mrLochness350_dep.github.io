@@ -14,3 +14,4 @@ I mostly do reverse engineering and Boot2root boxes so I'll place my writeups he
 
 ### Table of Contents
 - [HackTheBox](htb/htb.md)
+- [Malware Analysis](malware_analysis/MA.md)
