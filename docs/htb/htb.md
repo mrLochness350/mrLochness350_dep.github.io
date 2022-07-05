@@ -2,7 +2,7 @@
 - [Script Kiddy](easy_boxes/ScriptKiddy)
 - [Bounty Hunter](easy_boxes/BountyHunter)
 - [Love](easy_boxes/Love)
-- [Knife](easy_boxes/Knife) sssssa
+- [Knife](easy_boxes/Knife) sssssb
 - [Delivery](easy_boxes/Delivery)
 
 
