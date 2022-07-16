@@ -18,6 +18,8 @@ I also ran a gobuster but it didn't give me anything useful
 
 Let's check out the webserver and see what we're dealing with:
 
+# Exploring the webpage
+
 ![home page](/docs/img/homepage.png)
 
 Well, right off the bat we can see a username; **Nathan**. 
@@ -52,6 +54,8 @@ Well that hunch was right because the `.pcap` file connected to it included cred
 ![creds](/docs/img/creds.png)
 `nathan:Buck3tH4TF0RM3!`
 
+# Getting a shell
+
 The credentials are for ftp but what if Nathan reused the password for ssh? Let's try to connect with them:
 
 
@@ -63,6 +67,8 @@ Lets get the user flag and continue from there
 ![user.txt](/docs/img/user.png)
 
 Running `sudo -l` tells us that we can't run any sudo commands on the box..
+
+# Privilege Escalation
 
  Let's download linpeas [^2] onto the box to see what it'll find.
  
@@ -86,6 +92,11 @@ Let's get the root flag and finish the box:
 ![root flag](/docs/img/root_flag.png)
 
 
+# Summary
+To conclude, this box is a neat example of IDOR vulnerabilities and SetUID binary exploitation. Very nice box, I enjoyed it.  
+
+Thank you [@InfoSecJack](https://twitter.com/InfoSecJack?s=20&t=RfKfo7KOE5ANk4hjItbaag) for the fun box,
+And thank you for reading this blog post :)
 
 
 

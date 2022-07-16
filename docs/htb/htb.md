@@ -4,6 +4,12 @@
 - [Love](easy_boxes/Love)
 - [Knife](easy_boxes/Knife)
 - [Delivery](easy_boxes/Delivery)
+- [Cap](easy_boxes/cap)
+
+
+
+ 
+ 
 
 
 ### Medium boxes:
