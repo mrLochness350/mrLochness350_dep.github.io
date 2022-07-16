@@ -17,3 +17,10 @@
 ### Hard boxes:
 
 ### Insane boxes:
+
+
+
+
+
+
+[home](/docs/index.md)
