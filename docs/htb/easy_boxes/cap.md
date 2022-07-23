@@ -5,7 +5,7 @@
 
 
 I started off with an nmap scan like every box, which returned the open ports and services on the box:
-![nmap result](/docs/img/nmap_scan.png)
+![nmap result](./img/cap/nmap_scan.png)
 which gave me the following info:
 
 |Open ports | Service | version|
@@ -20,7 +20,7 @@ Let's check out the webserver and see what we're dealing with:
 
 # Exploring the webpage
 
-![home page](/docs/img/homepage.png)
+![home page](./img/cap/homepage.png)
 
 Well, right off the bat we can see a username; **Nathan**. 
 Trying to log out doesn't do anything so let's look around some more.
@@ -28,19 +28,19 @@ Trying to log out doesn't do anything so let's look around some more.
 There's an ip config tab, a network status tab and a "Security Snapshot"
 
 * **ip config**
-![ip page](/docs/img/ip_page.png)
+![ip page](./img/cap/ip_page.png)
 
 The contents of this page are just the output of `ifconfig`, which doesn't give us any useful information
 
 
 ---
 * **network status**
-![network status page](/docs/img/netstat.png)
+![network status page](./img/cap/netstat.png)
 This page also gives us a command output, but this time for `netstat`, which also doesn't give us a lot of useful information because none of connections are really "suspicious".
 
 ---
 * **Security Snapshot**
-![Security Snapshot](/docs/img/pcap_page.png)
+![Security Snapshot](./img/cap/pcap_page.png)
 Now this one is interesting. A download button? a strange URL with a number that could indicate an index of something? 
 Lets look at it:
 
@@ -51,7 +51,7 @@ What if we change the path from `/data/2` to `/data/0`. It has to start counting
 
 Well that hunch was right because the `.pcap` file connected to it included credentials for the `ftp` server running on the box!
 
-![creds](/docs/img/creds.png)
+![creds](./img/cap/creds.png)
 `nathan:Buck3tH4TF0RM3!`
 
 # Getting a shell
@@ -59,12 +59,12 @@ Well that hunch was right because the `.pcap` file connected to it included cred
 The credentials are for ftp but what if Nathan reused the password for ssh? Let's try to connect with them:
 
 
-![ssh](/docs/img/ssh.png)
+![ssh](./img/cap/ssh.png)
 
 It worked! we connected to the box via ssh!
 Lets get the user flag and continue from there
 
-![user.txt](/docs/img/user.png)
+![user.txt](./img/cap/user.png)
 
 Running `sudo -l` tells us that we can't run any sudo commands on the box..
 
@@ -74,7 +74,7 @@ Running `sudo -l` tells us that we can't run any sudo commands on the box..
  
 Woah there buckaroo! What do we have here?
 
-![privesc](/docs/img/privesc.png)
+![privesc](./img/cap/privesc.png)
 
 A python3.8 binary with the `cap_setuid` Linux Capability? [^3]
 
@@ -85,11 +85,11 @@ I'll try to get a shell using the poc in the hacktricks page:
 
 It worked! 
 
-![root](/docs/img/root.png)
+![root](./img/cap/root.png)
 
 Let's get the root flag and finish the box:
 
-![root flag](/docs/img/root_flag.png)
+![root flag](./img/cap/root_flag.png)
 
 
 # Summary
