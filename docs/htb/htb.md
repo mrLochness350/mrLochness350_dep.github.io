@@ -13,7 +13,7 @@
 
 
 ### Medium boxes:
-
+- [Popcorn](medium_boxes/popcorn.md)
 ### Hard boxes:
 
 ### Insane boxes:
