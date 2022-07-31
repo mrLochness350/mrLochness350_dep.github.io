@@ -1,4 +1,5 @@
 ### Easy boxes:
+- [Script Kiddy](easy_boxes/ScriptKiddy.md)
 
 - [Cap](easy_boxes/cap)
 ### Medium boxes:
