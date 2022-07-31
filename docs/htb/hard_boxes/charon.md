@@ -28,9 +28,10 @@ feroxbuster scan
 home page
 
 ![supercms](./img/charon/charon_supercms.png)
-looking up the cms on google i found a repo, last updated 4 years ago
 
-https://github.com/rojr/SuperCMS
+
+looking up the cms on google i found a [repo](https://github.com/rojr/SuperCMS), last updated 4 years ago
+
 
 well i cant access anything and the webpage seems empty so i'll run a vhost scan
 dead end
