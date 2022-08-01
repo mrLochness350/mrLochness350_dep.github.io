@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+            .sidenav {
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: beige;
+                overflow-x: hidden;
+                padding: top 20px;
+            }
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+                display: block;
+
+            }
+            .sidenav a :hover {
+                color: #f1f1f1;
+            }
+            .main {
+                margin-left: 160px;
+                padding: 0px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidenav">
+            <a href="#Initial Enumeration">Initial Enumeration</a>
+            <a href="#Foothold">Foothold</a>
+            <a href="#User Flag">User Flag</a>
+            <a href="#Privesc">Privesc</a>
+            <a href="#Root Flag">Root Flag</a>
+        </div>
+        <div class="main">
+            <h1 id="#Initial Enumeration">initial enumeration</h1>
+            <h3>nmap result</h3>
+            <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_nmap.png" alt="nmap scan">
+
+            
+            <h3><u>Services:</u></h3>
+            <table>
+                <tr>
+                    <th>service</th>
+                    <th>port</th>
+                    <th>version</th>
+                </tr>
+                <tr>
+                    <td>ssh</td>
+                    <td>22</td>
+                    <td>8.2p1 ubuntu</td>
+                </tr>
+                <tr>
+                    <td>werkzeug httpd</td>
+                    <td>5000</td>
+                    <td>0.16.1 (python 3.8.5)</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
