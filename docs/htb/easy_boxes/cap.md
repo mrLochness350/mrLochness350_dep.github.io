@@ -1,8 +1,5 @@
 
-# Initial Enumeration:
-
-**Ip address: 10.129.74.158**
-
+# Initial Enumeration
 
 I started off with an nmap scan like every box, which returned the open ports and services on the box:
 ![nmap result](./img/cap/nmap_scan.png)
@@ -34,6 +31,7 @@ The contents of this page are just the output of `ifconfig`, which doesn't give 
 
 
 ---
+
 * **network status**
 ![network status page](./img/cap/netstat.png)
 This page also gives us a command output, but this time for `netstat`, which also doesn't give us a lot of useful information because none of connections are really "suspicious".

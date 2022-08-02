@@ -31,19 +31,24 @@
                 margin-left: 160px;
                 padding: 0px 10px;
             }
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+            }
         </style>
     </head>
     <body>
         <div class="sidenav">
             <a href="#Initial Enumeration">Initial Enumeration</a>
+            <a href="#The Website">The Website</a>
             <a href="#Foothold">Foothold</a>
+       
             <a href="#User Flag">User Flag</a>
             <a href="#Privesc">Privesc</a>
             <a href="#Root Flag">Root Flag</a>
         </div>
         <div class="main">
-            <h1 id="Initial Enumeration">initial enumeration</h1>
-            <h3>nmap result</h3>
+            <h1 id="Initial Enumeration">Initial Enumeration</h1>
+            <h3>Nmap Result</h3>
             <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_nmap.png" alt="nmap scan">
 
             
@@ -65,6 +70,23 @@
                     <td>0.16.1 (python 3.8.5)</td>
                 </tr>
             </table>
+
+            <p>
+                we have an http title:  `k1d'5 h4ck3r t00l5` : "kid's hacker tools" 
+                lets run a dirbust to see what we have for directories while we check out the website:
+            </p>
+            <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_dirbuster.png" alt="dirbust">
+            <h2 id="The Website">The Website</h2>
+            <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_homepage.png" alt="the website">
+            <p>
+                this page has some generic hacker stuff, like the nmap scan, searchsploit and the payload generator. 
+it seems like it takes the given ip and runs an nmap scan on it. probably sending a filtered ip to the server and executing the nmap command. 
+            </p>
+        </br>
+        <p>
+            trying to inject code into the fields return an error but the searchsploit result returns something odd:
+        </p>
+        <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_hacking_attempt.png" alt="skid hacking attempt">
         </div>
     </body>
 </html>

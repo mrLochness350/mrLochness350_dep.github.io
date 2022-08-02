@@ -1,5 +1,3 @@
-ip addr: 10.129.95.150
-
 
 # initial enumeration
 
