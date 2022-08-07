@@ -1,40 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-            }
-            .sidenav {
-                height: 100%;
-                width: 160px;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: beige;
-                overflow-x: hidden;
-                padding: top 20px;
-            }
-            .sidenav a {
-                padding: 6px 8px 6px 16px;
-                text-decoration: none;
-                font-size: 25px;
-                color:black;
-                display: block;
-
-            }
-            .sidenav a :hover {
-                color: #f1f1f1;
-            }
-            .main {
-                margin-left: 160px;
-                padding: 0px 10px;
-            }
-            body {
-                font-family: 'Trebuchet MS', sans-serif;
-            }
-        </style>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <div class="sidenav">
@@ -47,7 +14,7 @@
             <a href="#Root Flag">Root Flag</a>
         </div>
         <div class="main">
-            <h1 id="Initial Enumeration">Initial Enumeration</h1>
+            <h1 id="#Initial Enumeration">Initial Enumeration</h1>
             <h3>Nmap Result</h3>
             <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_nmap.png" alt="nmap scan">
 
@@ -72,7 +39,7 @@
             </table>
 
             <p>
-                we have an http title:  `k1d'5 h4ck3r t00l5` : "kid's hacker tools" 
+                we have an http title:  "k1d'5 h4ck3r t00l5" : "kid's hacker tools" 
                 lets run a dirbust to see what we have for directories while we check out the website:
             </p>
             <img src="/docs/htb/easy_boxes/img/script_kiddy/skid_dirbuster.png" alt="dirbust">
