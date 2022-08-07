@@ -17,3 +17,6 @@ I mostly do reverse engineering and Boot2root boxes so I'll place my writeups he
 * Mail: [mrlochness07@gmail.com](mailto:mrlochness350@gmail.com)
 
 
+
+
+[TEST](/docs/html_test/scriptkiddy.html)
